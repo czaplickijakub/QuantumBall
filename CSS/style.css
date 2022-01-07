@@ -2,13 +2,13 @@
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 .blockOne
 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     height: max(100vh, 5rem);
 }
 
@@ -73,20 +73,24 @@
 #powerContainer
 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     gap: 10px;
     padding: 50px;
 }
 
-.numbers
+.numbers0,
+.numbers1,
+.numbers2,
+.numbers3,
+.numbers4
 {
     color: black;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
     width: max(40vw,5rem);
 }
@@ -101,7 +105,7 @@ p
     color: black;
     background-color: white;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 100px;
 }
 
 p1
@@ -109,5 +113,5 @@ p1
     color: white;
     background-color: red;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 100px;
 }

@@ -3,34 +3,48 @@ const oneText = document.querySelector('.oneText');
 const whiteBalls = 69; //max number you can choose
 const powerBall = 26; //max number you can choose
 const api_url = 'https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8&size=6';
+let amtToGen = 1;
+let content;
+let counter = 0;
 
 function generate()
 {
-    //resetText();
+    if(counter > 0)
+        reload();
+        //resetText();
 
-/*
-    for(let i = 0; i < 2; i++)
+    amtToGen = prompt("Enter the amount of sets (Max: 5)");
+    if((amtToGen > 5) || (amtToGen < 1))
+    {
+        while((amtToGen > 5) || (amtToGen < 1))
+        {
+            amtToGen = prompt("Incorrect input: Enter the amount to generate (Max: 5)");
+        }
+    }
+
+    for(let i = 0; i < amtToGen; i++)
     {
         let name = i.toString();
-    }
-*/
+        content = document.createElement('div'); //create a div...
+        content.classList.add('numbers' + i); //with a class 'numbers'
+        powerNums.appendChild(content); //add as child node
 
-
-    const content = document.createElement('div'); //create a div...
-    content.classList.add('numbers'); //with a class 'numbers'
-    powerNums.appendChild(content); //add as child node
-
-    for(let i = 0; i < 5; i++)
-    {
-        display(content);
-    }
+        for(let i = 0; i < 5; i++)
+        {
+            display(content);
+        }
     displayPower(content);
+    }
     oneText.innerText = 'Your lucky numbers are:';
+    counter++;
 }
 
 function resetText()
 {
-    document.getElementById("oneText").reset();  
+    for(let i = 0; i < amtToGen; i ++)
+    {
+        powerNums.removeChild(content);
+    }
 }
 
 async function display(content)
