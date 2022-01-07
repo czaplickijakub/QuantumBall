@@ -29,7 +29,13 @@ function generate()
         content.classList.add('numbers' + i); //with a class 'numbers'
         powerNums.appendChild(content); //add as child node
 
-        for(let i = 0; i < 5; i++)
+        /*
+        let increment = document.createElement('p2');
+        content.appendChild(increment);
+        increment.innerText = i + ":";
+*/
+
+        for(let j = 0; j < 5; j++)
         {
             display(content);
         }
