@@ -3,23 +3,22 @@ const oneText = document.querySelector('.oneText');
 const whiteBalls = 69; //max number you can choose
 const powerBall = 26; //max number you can choose
 const api_url = 'https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8&size=6';
-let amtToGen = 1;
+
+let amtToGen = document.getElementById('reps').value; 
+console.log(document.getElementById('reps').value);
 let content;
 let counter = 0;
 
 function generate()
 {
-    if(counter > 0)
-        reload();
+    //if(counter > 0)
+        //reload();
         //resetText();
 
-    amtToGen = prompt("Enter the amount of sets (Max: 5)");
     if((amtToGen > 5) || (amtToGen < 1))
     {
-        while((amtToGen > 5) || (amtToGen < 1))
-        {
-            amtToGen = prompt("Incorrect input: Enter the amount to generate (Max: 5)");
-        }
+            alert('Number is not in between 1 and 5. Please refresh');
+            return;
     }
 
     for(let i = 0; i < amtToGen; i++)
