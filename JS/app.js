@@ -7,8 +7,6 @@ const content = document.createElement('div'); //create a div with a class 'numb
 content.classList.add('numbers');
 powerNums.appendChild(content); //add as child node
 
-generate();
-
 function generate()
 {
     numStorage = ['one', 'two', 'three', 'four', 'five']
