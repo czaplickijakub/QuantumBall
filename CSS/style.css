@@ -9,8 +9,7 @@
 {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
+    height: max(100vh, 5rem);
 }
 
 .header
@@ -19,15 +18,12 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    height: max(15vh,6rem);
-    width: max(98vw,6rem);
     flex: 0 1 0;
-    border: 5px solid black;
-    padding: 6vh 2vw;
-    background-image: url('https://github.com/czaplickijakub/QuantumBall/blob/main/photos/galaxy.jpg?raw=true');
+    padding: 6vh 0px;
+    background-image: url('https://images.pexels.com/photos/5220017/pexels-photo-5220017.jpeg?cs=srgb&dl=pexels-ryutaro-tsukata-5220017.jpg&fm=jpg');
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100% auto;
+    background-size: 99vw auto;
 }
 
 .headerText
@@ -54,10 +50,64 @@
     font-size: 17px;
 }
 
+.oneBody
+{
+    padding: 10px 0px;
+    background-color: #015d5a;
+    width: max(100vw, 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
 .oneText
 {
-    color: #24093b;
+    color: #2e015d;
     font-family: tangerine;
     font-size: 60px;
     font-weight: bold;
+}
+
+#powerContainer
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px;
+}
+
+.numbers
+{
+    color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    width: max(40vw,5rem);
+}
+p,
+p1
+{
+    font-size: 30px;
+}
+
+p
+{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+p1
+{
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 20px;
 }
