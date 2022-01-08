@@ -9,7 +9,7 @@
 {
     display: flex;
     flex-flow: column nowrap;
-    
+    flex: 1 1 0;
 }
 
 .header
@@ -168,7 +168,7 @@ p1
 .blockTwo
 {
     flex-wrap: wrap;
-    flex: 0 1 0;
+    flex: 1 1 0;
 }
 
 .about
