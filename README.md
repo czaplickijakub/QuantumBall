@@ -21,3 +21,6 @@ The API that supplies these numbers is courtesy of [The Australian National Univ
 Research for this app was truly wild. The rabbit hole started with [ornithology](https://daily.jstor.org/the-quantum-random-number-generator/), casually mentioned [faster than light communication](https://daily.jstor.org/the-quantum-random-number-generator/), and ended with a brief, lighthearted discussion about [determinism and free will](https://mindmatters.ai/2018/12/quantum-randomness-gives-nature-free-will/).
 
 Overall, this was a fun, yet challenging project.
+
+## KNOWN ISSUES
+- Numbers may repeat. Unlikely, but possible.
