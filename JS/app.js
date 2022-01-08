@@ -1,5 +1,6 @@
 const powerNums = document.querySelector('#powerContainer'); //Selecting DOM to manipulate
 const oneText = document.querySelector('.oneText'); //Selecting DOM to manipulate
+const twoText = document.querySelector('.twoText'); 
 
 let amtToGen; //keeps track of amount of sets requested
 let clicked = false; //functionality to lock buttons
@@ -20,6 +21,7 @@ function generate(num)
             powerNums.appendChild(content); //add as child node
 
             oneText.innerText = 'Your lucky numbers are:';
+            twoText.innerText = "Good Luck!"
 
             for(let j = 0; j < 5; j++)
             {
