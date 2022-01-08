@@ -34,7 +34,12 @@ function generate(num)
 
 function resetText()
 {
-    window.location.href = window.location.href;
+    clicked = false;
+    for(let i = 0; i < amtToGen; i++)
+    {
+        powerNums.removeChild(powerNums.firstElementChild);
+    }
+    oneText.innerText = 'Click a button to generate';
 }
 
 async function display(content)
