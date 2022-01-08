@@ -14,7 +14,7 @@
 ## About
 This project was inspired by a friend asking me for Powerball numbers. After dealing shuffled cards, I realized how inneffective it was. This was partly due to a lack of range (Powerball goes up to 69, cards only go from A-K which is 13). However, what bothered me most were concerns about shuffle quality.
 
-This reminded me of an app called "Randonautica." It offers users a randomly generated location so they may go there and explore. What is unique about this app is that it uses a quantum random number generator (QRNG). Many users report chilling accounts about how their thoughts influenced the QRNG's results.
+This reminded me of the app [Randonautica](https://www.randonautica.com/). It offers users a randomly generated location so they may go there and explore. What is unique about this app is that it uses a quantum random number generator (QRNG). Many users report chilling accounts about how their thoughts influenced the QRNG's results.
 
 The API that supplies these numbers is courtesy of [The Australian National University](https://qrng.anu.edu.au/contact/api-documentation/). Proponents of QRNGs state that it may be used to measure [global human consciousness](https://noosphere.princeton.edu/). Other implications include, but are not limited to,  [cybersecurity](https://spectrum.ieee.org/quantum-randomness-boosts-everyday-security) and [virus  simulations](https://www.random.org/randomness/).
 
