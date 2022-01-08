@@ -8,8 +8,8 @@
 - Manipulating the DOM using javaScript
 - Website Design
 - The difference between pseudorandom and truly random numbers
--- The problems that arise when generating these numbers
--- The numerous implications that relate to random numbers.
+  - The problems that arise when generating these numbers
+  - The numerous implications that relate to random numbers.
 
 ## About
 This project was inspired by a friend asking me for Powerball numbers. After dealing shuffled cards, I realized how inneffective it was. This was partly due to a lack of range (Powerball goes up to 69, cards only go from A-K which is 13). However, what bothered me most were concerns about shuffle quality.
