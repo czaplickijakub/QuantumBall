@@ -26,6 +26,12 @@
     background-size: 99vw auto;
 }
 
+.border
+{
+    padding: 30px;
+    border: 5px solid white;
+}
+
 .headerText
 {
     font-family: Teko;
@@ -53,7 +59,9 @@
 .oneBody
 {
     padding: 10px 0px;
-    background-color: #015d5a;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fseamless-green-felt&psig=AOvVaw2Fkfi7nxO_epAZmJ0ptd_7&ust=1641748756866000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCC5-3UovUCFQAAAAAdAAAAABAP');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     max-width: 100vw;
     display: flex;
     align-items: center;
@@ -155,12 +163,41 @@ p1
 .about
 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-flow: column wrap;
+    padding: 50px;
+    background-color: #666263;
 }
 
 .aboutHeader
 {
     font-size: 40px;
     font-family: Lato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph1
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    padding: 50px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li
+{
+    padding: 10px;
+    font-family: Lato;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black,
+                 0px 0px 20px black,
+                 5px 5px 40px black;
 }
