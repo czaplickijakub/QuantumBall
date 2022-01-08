@@ -87,7 +87,8 @@
 .numbers1,
 .numbers2,
 .numbers3,
-.numbers4
+.numbers4,
+.numbers5
 {
     color: black;
     padding: 20px;
@@ -118,4 +119,26 @@ p1
     background-color: red;
     padding: 5px;
     border-radius: 100px;
+}
+
+.btnContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btnGen
+{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    width: 50px;
+    border: none;
+    border-radius: 100px;
+    background-color: #b01c2e;
+    color: white;
 }

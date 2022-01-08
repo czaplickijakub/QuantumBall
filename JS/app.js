@@ -4,35 +4,22 @@ const whiteBalls = 69; //max number you can choose
 const powerBall = 26; //max number you can choose
 const api_url = 'https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8&size=6';
 
-let amtToGen = document.getElementById('reps').value; 
-console.log(document.getElementById('reps').value);
+let amtToGen;
 let content;
 let counter = 0;
 
-function generate()
+function generate(num=1)
 {
+    amtToGen = num;
     //if(counter > 0)
         //reload();
         //resetText();
-
-    if((amtToGen > 5) || (amtToGen < 1))
-    {
-            alert('Number is not in between 1 and 5. Please refresh');
-            return;
-    }
-
     for(let i = 0; i < amtToGen; i++)
     {
         let name = i.toString();
         content = document.createElement('div'); //create a div...
         content.classList.add('numbers' + i); //with a class 'numbers'
         powerNums.appendChild(content); //add as child node
-
-        /*
-        let increment = document.createElement('p2');
-        content.appendChild(increment);
-        increment.innerText = i + ":";
-*/
 
         for(let j = 0; j < 5; j++)
         {
@@ -41,7 +28,7 @@ function generate()
     displayPower(content);
     }
     oneText.innerText = 'Your lucky numbers are:';
-    counter++;
+    //counter++;
 }
 
 function resetText()
