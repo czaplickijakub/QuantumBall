@@ -103,6 +103,8 @@ p,
 p1
 {
     font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
 }
 
 p
@@ -148,4 +150,17 @@ p1
 {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.about
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutHeader
+{
+    font-size: 40px;
+    font-family: Lato;
 }
