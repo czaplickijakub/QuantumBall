@@ -6,37 +6,35 @@ const api_url = 'https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8&size=
 
 let amtToGen;
 let content;
-let counter = 0;
+let clicked = false;
 
-function generate(num=1)
+function generate(num)
 {
-    amtToGen = num;
-    //if(counter > 0)
-        //reload();
-        //resetText();
-    for(let i = 0; i < amtToGen; i++)
+    if(!clicked)
     {
-        let name = i.toString();
-        content = document.createElement('div'); //create a div...
-        content.classList.add('numbers' + i); //with a class 'numbers'
-        powerNums.appendChild(content); //add as child node
+        amtToGen = num;
+        clicked = true;
 
-        for(let j = 0; j < 5; j++)
+        for(let i = 0; i < amtToGen; i++)
         {
-            display(content);
+            let name = i.toString();
+            content = document.createElement('div'); //create a div...
+            content.classList.add('numbers' + i); //with a class 'numbers'
+            powerNums.appendChild(content); //add as child node
+
+            for(let j = 0; j < 5; j++)
+            {
+                display(content);
+            }
+        displayPower(content);
         }
-    displayPower(content);
+        oneText.innerText = 'Your lucky numbers are:';
     }
-    oneText.innerText = 'Your lucky numbers are:';
-    //counter++;
 }
 
 function resetText()
 {
-    for(let i = 0; i < amtToGen; i ++)
-    {
-        powerNums.removeChild(content);
-    }
+    window.location.href = window.location.href;
 }
 
 async function display(content)

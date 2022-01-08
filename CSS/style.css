@@ -129,7 +129,8 @@ p1
     gap: 20px;
 }
 
-.btnGen
+.btnGen,
+.reset
 {
     font-size: 30px;
     display: flex;
@@ -141,4 +142,10 @@ p1
     border-radius: 100px;
     background-color: #b01c2e;
     color: white;
+}
+
+.reset
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
