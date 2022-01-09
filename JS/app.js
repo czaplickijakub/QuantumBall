@@ -40,6 +40,7 @@ function resetText()
         powerNums.removeChild(powerNums.firstElementChild);
     }
     oneText.innerText = 'Click a button to generate';
+    twoText.innerText = '';
 }
 
 async function display(content)
