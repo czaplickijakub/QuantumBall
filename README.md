@@ -3,6 +3,9 @@
 
 ### The website may be accessed [here](https://czaplickijakub.github.io/QuantumBall/).
 
+### Credits: 
+Ryutaro Tsukata @ [Pexels](https://www.pexels.com/photo/light-rays-in-dark-room-6249821/).
+
 ### What I've Learned From This Project
 - How to use JSON APIs and interpreting results with javaScript
 - Manipulating the DOM using javaScript
