@@ -10,6 +10,7 @@ teekid @ [Canva](https://www.canva.com/photos/MAEEhL1tOPk-abstract-light/).
 - How to use JSON APIs and interpreting results with javaScript
 - Manipulating the DOM using javaScript
 - Website Design
+  - Creating an image in Canva and applying it
 - The difference between pseudorandom and truly random numbers
   - The problems that arise when generating these numbers
   - The numerous implications that relate to random numbers.
