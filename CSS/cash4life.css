@@ -3,13 +3,22 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-flow: column nowrap;
+    height: 98vh;
 }
+
+.text
+{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
 
 .blockOne
 {
     display: flex;
     flex-flow: column nowrap;
-    flex: 1 1 0;
+    flex: 1;
 }
 
 .header
@@ -22,8 +31,7 @@
     min-height: 30vh;
     max-height: 30vh;
     width: 100vw;
-    background-image: url(../photos/hdrGen.png);
-    background-color: #2a4e6a;
+    background-image: url(../photos/cash4lifeBanner.png);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -39,34 +47,10 @@
     flex-direction: column;
 }
 
-.headerText
-{
-    font-family: Teko;
-    font-size: 60px;
-    font-weight: bold;
-    color: #d0d9d2;
-    text-shadow: 0px 0px 5px black,
-    0px 0px 20px black,
-    5px 5px 40px red;
-}
-
-.headerSubText
-{
-    font-family: Abril Fatface;
-    color: #f0b85d;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.headerSubText1
-{
-    font-size: 17px;
-}
-
 .oneBody
 {
     padding: 10px 0px;
-   background-color: #2a4e6a;
+    background-color: #2a4e6a;
     background-repeat: no-repeat;
     background-size: 100% auto;
     max-width: 100vw;
@@ -74,7 +58,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    flex: 1 0 0;
+    flex: 1;
     padding-bottom: 100px;
 }
 
@@ -95,14 +79,14 @@
 #powerContainer
 {
     max-height: 50vh;
-    width: max(90vw, 1rem);
+    max-width: max(90vw, 1rem);
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    justify-content: baseline;
+    justify-content: center;
     gap: 30px;
     padding: 10px;
-    flex: 0 1 0;
+    flex: 1;
 }
 
 .numbers0,
@@ -110,7 +94,9 @@
 .numbers2,
 .numbers3,
 .numbers4,
-.numbers5
+.numbers5,
+.numbers6,
+.numbers7
 {
     color: black;
     padding: 20px;
@@ -172,41 +158,6 @@ p1
 {
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.blockTwo
-{
-    flex-wrap: wrap;
-    flex: 1 1 0;
-}
-
-.about
-{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    background-color: #666263;
-}
-
-.aboutHeader
-{
-    font-size: 40px;
-    font-family: Lato;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.paragraph1
-{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    padding: 50px;
 }
 
 ul

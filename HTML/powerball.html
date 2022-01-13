@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>PowerBall Generator</title>
+
+        <script type="text/javascript" src='../JS/powerGen.js' defer></script>
+        <link rel="stylesheet" href="../CSS/powerball.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="blockOne">
+                <div class ="header"></div>
+                <div class="oneBody">
+                        <div class="oneText">Click a button to generate</div>
+                    <div id="powerContainer"></div>
+                    <div class="btnContainer">
+                        <button class="btnGen" onclick="generate(1)">1</button>
+                        <button class="btnGen" onclick="generate(2)">2</button>
+                        <button class="btnGen" onclick="generate(3)">3</button>
+                        <button class="btnGen" onclick="generate(4)">4</button>
+                        <button class="btnGen" onclick="generate(5)">5</button>
+                        <button class="btnGen" onclick="generate(6)">6</button>
+                        <button class="btnGen" onclick="generate(7)">7</button>
+                        <button class="btnGen" onclick="generate(8)">8</button>
+                        <button class="reset" onclick="resetText()">Reset</button>
+                    </div>
+                    <div class="twoText"></div>
+                </div>
+            </div>
+            <div class="BlockTwo">
+              <div class="about">
+                <div class="aboutHeader">How to use</div>
+                <ol>
+                    <li>Press a button to generate the respective number of sets</li>
+                    <li>Create an intention about winning. There are theories about QRNGs being able to be influenced by thoughts. Even if you don't believe in these theories, you are still getting a uniform distribution of random numbers which may give you a slightly better chance of winning.</li>
+                    <li>Have fun!</li>
+                </ol>
+                <div class="aboutHeader">About</div>
+                  <div class="paragraph1">
+                    <ul>
+                        <li>When generating numbers, it may take a while to display. This is because the website is fetching live, unbuffered numbers. Thus, it may take a while to load</li>
+                        <li>These numbers are unbuffered. This means that the numbers are sent raw as they are generated. This is opposed to generated, processed, and then sent. Hence, the website is likely suitable for the use of consciousness experiments. </li>
+                        <li>This project was inspired by a friend asking me for Powerball numbers. After dealing shuffled cards, I realized how inneffective my method was. This was partly due to a lack of range (Powerball goes up to 69, cards only go from A-K which is 13). However, what bothered me most were concerns about shuffle quality.</li>
+                        <li>This reminded me of the app Randonautica. It offers users a randomly generated location so they may go there and explore. What is unique about this app is that it uses a quantum random number generator (QRNG). Many users report chilling accounts about how their thoughts influenced the QRNG's results.</li>
+                        <li>The API that supplies these numbers is courtesy of The Australian National University. Proponents of QRNGs state that it may be used to measure global human consciousness. Other implications include cybersecurity and even virus  simulations.</li>
+                        <li>Research for this app was truly wild. The rabbit hole started with ornithology, casually mentioned faster than light communication, and ended with a brief, lighthearted discussion about determinism and free will.</li>
+                        <li>Overall, this was a fun, yet challenging project.</li>
+                        <a href="https://czaplicki-j.github.io/page3.html">Learn about your odds of winning in my previous article</a>
+                    </ul>
+                  </div>  
+              </div>  
+            </div>
+            <div class="Footer">Made with 💖 and ☕</div>
+        </div>
+    </body>
+
+</html>

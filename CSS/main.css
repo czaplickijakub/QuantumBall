@@ -1,0 +1,114 @@
+.content
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 98vh;
+}
+
+.text
+{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
+.header
+{
+    min-height: 30vh;
+    max-height: 30vh;
+    width: 100vw;
+    background-image: url(../photos/mainHdr.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.blockOne
+{
+    background-color: #294370;
+    padding: 20px;
+}
+
+.oneBody
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: tangerine;
+    font-size: 60px;
+    color: wheat;
+}
+
+.icons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+}
+
+a.buttonP,
+a.buttonC
+{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    width: 30vw;
+    height: 40vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 0 1 10;
+}
+
+a.buttonP
+{
+    background-image: url(../photos/powerball.png);
+}
+
+a.buttonC
+{
+    background-image: url(../photos/cash4life.png);
+}
+
+.blockTwo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: lobster;
+    font-size: 30px;
+    background-color: green;
+    padding: 10px;
+    flex: 1 1 auto;
+    gap: 20px;
+}
+
+.twoHeader
+{
+    color: white;
+}
+
+.amount
+{
+    border: 5px solid white;
+    padding: 10px;
+    color: white;
+}
+
+.Footer
+{
+    font-family: lato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #2e294a;
+    color: white;
+}
