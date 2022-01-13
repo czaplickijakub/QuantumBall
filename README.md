@@ -28,3 +28,5 @@ Overall, this was a fun, yet challenging project.
 
 ## KNOWN ISSUES
 - Numbers may repeat. Unlikely, but possible.
+- Number generation is slow.
+  - This is expected as the ranges of numbers generated goes to 255 and must be re-run until a smaller number is generated
