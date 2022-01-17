@@ -3,7 +3,7 @@
 
 ### The website may be accessed [here](https://czaplickijakub.github.io/QuantumBall/).
 
-### Total amount won using this app: $20!
+## Total amount won using this app: $20!
 
 ### Credits: 
 teekid @ [Canva](https://www.canva.com/photos/MAEEhL1tOPk-abstract-light/).
